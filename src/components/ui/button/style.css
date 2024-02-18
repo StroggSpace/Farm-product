@@ -1,0 +1,13 @@
+.button {
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+
+  border: none;
+  width: 260px;
+  height: 60px;
+  background-color: #fc9b27;
+}

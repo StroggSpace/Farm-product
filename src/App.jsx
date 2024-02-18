@@ -1,31 +1,11 @@
 import React from "react";
+import "./App.css";
+import PageWrapper from "./components/layout/page-wrapper/PageWrapper.jsx";
 
 function App() {
   return (
     <>
-      <PageWrapper>
-        <Header>
-          <Logo />
-          <Nav>
-            <Button />
-          </Nav>
-        </Header>
-        <MainPage>
-          <About>
-            <Title />
-          </About>
-          <ComparisonList>
-            <ComparisonItem />
-            <ComparisonItem />
-            <ComparisonItem />
-            <ComparisonItem />
-            <Button />
-          </ComparisonList>
-        </MainPage>
-        <Footer>
-          <Logo />
-        </Footer>
-      </PageWrapper>
+      <PageWrapper />
     </>
   );
 }

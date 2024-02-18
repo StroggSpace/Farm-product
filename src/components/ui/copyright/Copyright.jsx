@@ -1,6 +1,9 @@
 import React from "react";
 
 export default function Copyright() {
-  return <></>;
+  return (
+    <>
+      <p className="copyright">Создано 2021</p>
+    </>
+  );
 }
-
