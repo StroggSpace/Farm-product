@@ -1,17 +1,17 @@
 import React from "react";
 import Logo from "../../ui/logo/Logo";
 import Nav from "../nav/Nav";
-import "./style.css";
+import { StyledHeader, StyledLogo } from "./style";
 
 export default function Header() {
   return (
     <>
-      <header className="header">
-        <div className="header__logo">
+      <StyledHeader>
+        <StyledLogo>
           <Logo />
-        </div>
+        </StyledLogo>
         <Nav />
-      </header>
+      </StyledHeader>
     </>
   );
 }

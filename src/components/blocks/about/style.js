@@ -1,12 +1,14 @@
-.about {
+import styled from "styled-components";
+
+export const StyledSection = styled.section`
   display: grid;
   grid-template-columns: 637px 446px;
   align-items: center;
   justify-content: space-between;
   position: relative;
-}
+`;
 
-.about__img {
+export const StyledImgContainer = styled.div`
   width: 100%;
   position: relative;
   display: flex;
@@ -27,4 +29,4 @@
   & svg {
     position: relative;
   }
-}
+`;

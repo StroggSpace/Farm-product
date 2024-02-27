@@ -1,6 +1,6 @@
 import React from "react";
-import "./style.css";
-import Title, { TitleSize } from "../../ui/title/Title";
+import { StyledSection, StyledList } from "./style.js";
+import Title from "../../ui/title/Title";
 import ComparisonItem from "../../ui/comparison-item/ComparisonItem";
 import comparisonData from "../../../mocks/comparisonData";
 import Button from "../../ui/button/Button";
@@ -8,12 +8,10 @@ import Button from "../../ui/button/Button";
 export default function ComparisonList() {
   return (
     <>
-      <section className="comparison">
-        <Title size={TitleSize.DEFAULT}>
-          Почему фермерские продукты лучше?
-        </Title>
+      <StyledSection>
+        <Title level={2}>Почему фермерские продукты лучше?</Title>
 
-        <ul className="comparison-list">
+        <StyledList>
           {comparisonData.length &&
             comparisonData.map((item) => (
               <ComparisonItem
@@ -22,12 +20,13 @@ export default function ComparisonList() {
                 title={item.title}
                 subtitle={item.subtitle}
                 text={item.text}
+                isNegative={item.isNegative}
               />
             ))}
-        </ul>
+        </StyledList>
 
-        <Button>Купить</Button>
-      </section>
+        <Button link="/catalog">Купить</Button>
+      </StyledSection>
     </>
   );
 }

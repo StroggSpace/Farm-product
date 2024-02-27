@@ -4,7 +4,7 @@ import Button from "../../ui/button/Button";
 export default function Nav() {
   return (
     <>
-      <Button>Купить</Button>
+      <Button link="/catalog">Купить</Button>
     </>
   );
 }

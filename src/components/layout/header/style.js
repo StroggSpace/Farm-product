@@ -1,4 +1,6 @@
-.footer {
+import styled from "styled-components";
+
+export const StyledHeader = styled.header`
   display: flex;
   padding: 0 90px;
   width: 1280px;
@@ -11,10 +13,10 @@
     0 0 1px rgba(0, 0, 0, 0.04);
   align-items: center;
   z-index: 5;
-}
+`;
 
-.footer__logo {
+export const StyledLogo = styled.div`
   display: flex;
   align-items: center;
   gap: 24px;
-}
+`;

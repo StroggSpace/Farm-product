@@ -1,10 +1,11 @@
 import React from "react";
-import "./App.css";
 import PageWrapper from "./components/layout/page-wrapper/PageWrapper.jsx";
+import { GlobalStyle } from "./styles.js";
 
 function App() {
   return (
     <>
+      <GlobalStyle />
       <PageWrapper />
     </>
   );
