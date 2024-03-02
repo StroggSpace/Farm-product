@@ -4,6 +4,5 @@ export const StyledPageWrapper = styled.main`
   width: 1280px;
   margin: 0 auto;
   padding: 0 90px;
-  background: linear-gradient(180deg, #d8ecfe 563px, #ffffff 563px);
   margin-bottom: 100px;
 `;

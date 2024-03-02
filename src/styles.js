@@ -21,6 +21,13 @@ body {
   color: ${(props) => props.theme.colors.blackText};
 }
 
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 li {
   list-style: none;
 }

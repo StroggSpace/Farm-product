@@ -1,7 +1,7 @@
 import React from "react";
 import { StyledSection, StyledList } from "./style.js";
 import Title from "../../ui/title/Title";
-import ComparisonItem from "../../ui/comparison-item/ComparisonItem";
+import ComparisonItem from "../../ui/comparisonItem/ComparisonItem.jsx";
 import comparisonData from "../../../mocks/comparisonData";
 import Button from "../../ui/button/Button";
 

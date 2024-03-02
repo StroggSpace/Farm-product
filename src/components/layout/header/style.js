@@ -10,7 +10,7 @@ export const StyledHeader = styled.header`
   justify-content: space-between;
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04), 0 0 2px rgba(0, 0, 0, 0.06),
-    0 0 1px rgba(0, 0, 0, 0.04);
+    0 0 1px rgba(0, 0, 0, 0.04), 0 -4px 8px rgba(0, 0, 0, 0.04);
   align-items: center;
   z-index: 5;
 `;

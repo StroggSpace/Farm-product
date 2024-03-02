@@ -1,11 +1,17 @@
 import styled from "styled-components";
 
 export const StyledSection = styled.section`
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 637px 446px;
   align-items: center;
   justify-content: space-between;
   position: relative;
+  width: calc(100% + 180px);
+  margin-left: -90px;
+  margin-right: -90px;
+  padding: 0 90px;
+  background: #d8ecfe;
 `;
 
 export const StyledImgContainer = styled.div`
