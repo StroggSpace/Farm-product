@@ -1,11 +1,11 @@
 import React from "react";
-import Title from "../title/Title";
+import { StyledSubtitle, StyledPrice } from "./style";
 
 export default function FinalPrice({ price }) {
   return (
     <>
-      <p>Цена</p>
-      <Title level={4}>{price ? `${price} руб.` : "0 руб."}</Title>
+      <StyledSubtitle>Цена</StyledSubtitle>
+      <StyledPrice>{price ? `${price} руб.` : "0 руб."}</StyledPrice>
     </>
   );
 }

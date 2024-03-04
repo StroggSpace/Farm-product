@@ -1,12 +1,12 @@
 import React from "react";
 import { StyledButton } from "./style.js";
 
-export default function Button({ children, minWidth, link }) {
+export default function Button({ children, link, disabled }) {
   return (
     <>
       <StyledButton
-        $minWidth={minWidth}
-        {...(link ? { href: link } : { as: "button", type: "button" })}
+        disabled={disabled}
+        {...(link ? { href: link } : { as: "button", type: "submit" })}
       >
         {children}
       </StyledButton>

@@ -11,7 +11,7 @@ export const StyledSection = styled.section`
   margin-left: -90px;
   margin-right: -90px;
   padding: 0 90px;
-  background: #d8ecfe;
+  background: ${(props) => props.theme.colors.lightBlue};
 `;
 
 export const StyledImgContainer = styled.div`

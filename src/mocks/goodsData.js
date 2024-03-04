@@ -39,6 +39,7 @@ const goodsData = [
     price: "200 руб. / 85 гр.",
     priceCount: 200,
     shelfLife: "30 суток.",
+    breed: "-",
     origin: "Московская облать.",
     energyValue: "386 кКал. / 1615,1 кДж.",
     nutritionalValue:

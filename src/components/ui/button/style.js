@@ -23,6 +23,11 @@ export const StyledButton = styled.a`
   }
 
   &:hover {
-    box-shadow: inset 0 4px 0 rgba(0, 0, 0, 0.14);
+    ${(props) =>
+      props.disabled ? "" : `box-shadow: inset 0 4px 0 rgba(0, 0, 0, 0.14)`};
+  }
+
+  &:disabled {
+    background-color: #b3b3b3;
   }
 `;

@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import { StyledCheckItemLabel, StyledCheckItemInput } from "./style";
 
 export default function CheckItem({ title, id }) {
+  const [checked, setChecked] = useState(false);
+
+  const handleChecked = () => {
+    setChecked(!checked);
+  };
+
   return (
     <>
-      <label>
+      <StyledCheckItemLabel checked={checked}>
         {title}
-        <input type="checkbox" id={id} />
-      </label>
+        <StyledCheckItemInput
+          type="checkbox"
+          id={id}
+          onChange={handleChecked}
+        />
+      </StyledCheckItemLabel>
     </>
   );
 }
