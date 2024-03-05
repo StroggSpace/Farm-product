@@ -5,7 +5,7 @@ import ComparisonItem from "../../ui/comparisonItem/ComparisonItem.jsx";
 import comparisonData from "../../../mocks/comparisonData";
 import Button from "../../ui/button/Button";
 import { StyledRoutLink } from "../../ui/StyledRoutLink";
-import { appRoute } from "../../../routes/appRoute";
+import { AppRoutes } from "../../../routes/AppRoutes";
 export default function ComparisonList() {
   return (
     <>
@@ -26,7 +26,7 @@ export default function ComparisonList() {
             ))}
         </StyledList>
 
-        <StyledRoutLink to={`/catalog`}>
+        <StyledRoutLink to={AppRoutes.CATALOG}>
           <Button>Купить</Button>
         </StyledRoutLink>
       </StyledSection>

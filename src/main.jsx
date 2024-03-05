@@ -6,15 +6,16 @@ import { ThemeProvider } from "styled-components";
 import { defaultTheme } from "./theme/default";
 import CatalogPage from "./components/pages/catalogPage/CatalogPage";
 import ErrorPage from "./components/pages/errorPage/ErrorPage";
+import { AppRoutes } from "./routes/AppRoutes";
 
 const router = createBrowserRouter([
   {
-    path: import.meta.env.BASE_URL,
+    path: `${AppRoutes.MAIN}`,
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: `/catalog`,
+        path: `${AppRoutes.CATALOG}`,
         element: <CatalogPage />,
       },
     ],

@@ -3,6 +3,7 @@ import Button from "../../ui/button/Button";
 import Title from "../../ui/title/Title";
 import { StyledErrorPage, StyledText } from "./style";
 import { StyledRoutLink } from "../../ui/StyledRoutLink";
+import { AppRoutes } from "../../../routes/AppRoutes";
 
 export default function ErrorPage() {
   const error = useRouteError();
@@ -16,7 +17,7 @@ export default function ErrorPage() {
       </Title>
       <StyledText>Извините, произошла ошибка.</StyledText>
 
-      <StyledRoutLink to={import.meta.env.BASE_URL}>
+      <StyledRoutLink to={AppRoutes.MAIN}>
         <Button>Вернуться на главную страницу</Button>
       </StyledRoutLink>
     </StyledErrorPage>
