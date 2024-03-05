@@ -1,4 +1,4 @@
 export const appRoute = {
-  MAIN: "/",
+  MAIN: import.meta.env.BASE_URL,
   CATALOG: "/catalog",
 };
