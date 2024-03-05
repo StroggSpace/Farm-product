@@ -1,7 +1,6 @@
 const comparisonData = [
   {
     id: 1,
-    logo: "../src/assets/comparison-icon/Eat.svg",
     isNegative: false,
     title: "Фермерские продукты",
     subtitle: "Еда намного вкуснее",
@@ -10,7 +9,6 @@ const comparisonData = [
   ,
   {
     id: 2,
-    logo: "../src/assets/comparison-icon/Garbage.svg",
     isNegative: true,
     title: "Магазинные продукты",
     subtitle: "Просроченные продукты",
@@ -18,7 +16,6 @@ const comparisonData = [
   },
   {
     id: 3,
-    logo: "../src/assets/comparison-icon/Sprout.svg",
     isNegative: false,
     title: "Фермерские продукты",
     subtitle: "Натуральные продукты",
@@ -26,7 +23,6 @@ const comparisonData = [
   },
   {
     id: 4,
-    logo: "../src/assets/comparison-icon/No-meat.svg",
     isNegative: true,
     title: "Магазинные продукты",
     subtitle: "Некачественное мясо",

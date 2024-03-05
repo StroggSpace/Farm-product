@@ -29,8 +29,7 @@ export const StyledCardHeader = styled.div`
   column-gap: 20px;
   align-items: center;
 `;
-
-export const StyledCardIcon = styled.img`
+export const StyledCardIcon = styled.div`
   grid-column: 1/2;
   grid-row: 1/3;
 `;

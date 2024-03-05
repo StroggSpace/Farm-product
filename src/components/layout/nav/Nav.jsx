@@ -1,10 +1,32 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import Button from "../../ui/button/Button";
+import { StyledRoutLink } from "../../ui/StyledRoutLink";
+import { appRoute } from "../../../routes/appRoute";
 
 export default function Nav() {
+  const { pathname } = useLocation();
+
   return (
     <>
-      <Button link="/catalog">Купить</Button>
+      {(pathname === "/catalog" && (
+        <StyledRoutLink to="/">
+          <Button
+            style={{
+              backgroundColor: "#fff",
+              color: "#333",
+              textAlign: "end",
+              minWidth: "80px",
+            }}
+          >
+            Главная
+          </Button>
+        </StyledRoutLink>
+      )) || (
+        <StyledRoutLink to={appRoute.CATALOG}>
+          <Button>Каталог</Button>
+        </StyledRoutLink>
+      )}
     </>
   );
 }

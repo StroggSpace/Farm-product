@@ -3,23 +3,23 @@ import {
   StyledCard,
   StyledCardHeader,
   StyledCardTitle,
-  StyledCardIcon,
   StyledCardSubtitle,
 } from "./style.js";
+import CardIcon from "./CardIcon.jsx";
 
 export default function ComparisonItem({
-  logo,
   title,
   subtitle,
   text,
   isNegative,
+  id,
 }) {
   return (
     <>
       <li>
         <StyledCard $isNegative={isNegative}>
           <StyledCardHeader>
-            <StyledCardIcon src={logo} alt="Значок списка" />
+            <CardIcon id={id} />
             <StyledCardTitle $isNegative={isNegative}>{title}</StyledCardTitle>
             <StyledCardSubtitle>{subtitle}</StyledCardSubtitle>
           </StyledCardHeader>

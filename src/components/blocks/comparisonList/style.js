@@ -6,6 +6,7 @@ export const StyledSection = styled.section`
   align-items: center;
 
   padding-top: 100px;
+  margin-bottom: 100px;
 `;
 
 export const StyledList = styled.ul`

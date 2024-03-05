@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { goodsData } from "../../../mocks/goodsData";
 import CheckItem from "../../ui/checkItem/CheckItem";
 import FinalPrice from "../../ui/finalPrice/FinalPrice";
@@ -13,6 +13,14 @@ import {
 } from "./style";
 
 export default function Form({ handleCheck, totalPrice }) {
+  // Отключение покупки
+  const [isDisabled, setIsDisabled] = useState(true);
+
+  useEffect(() => {
+    totalPrice > 0 ? setIsDisabled(false) : setIsDisabled(true);
+  }, [totalPrice]);
+
+  // Вывод заказа
   const handleSubmit = (event) => {
     event.preventDefault();
     const address = event.target.address.value;
@@ -49,7 +57,12 @@ export default function Form({ handleCheck, totalPrice }) {
                 required
               />
               <FinalPrice price={totalPrice} />
-              <Button disabled={totalPrice === 0 && !goodsData.length}>
+              <Button
+                disabled={isDisabled}
+                style={
+                  (isDisabled && { opacity: 0.5, cursor: "not-allowed" }) || {}
+                }
+              >
                 Купить
               </Button>
             </StyledFieldset>

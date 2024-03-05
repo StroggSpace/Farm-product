@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import { StyledCheckItemLabel, StyledCheckItemInput } from "./style";
+import {
+  StyledCheckItemLabel,
+  StyledCheckItemInput,
+  StyledCheck,
+} from "./style";
 
 export default function CheckItem({ title, id }) {
   const [checked, setChecked] = useState(false);
@@ -17,6 +21,7 @@ export default function CheckItem({ title, id }) {
           id={id}
           onChange={handleChecked}
         />
+        <StyledCheck checked={checked} />
       </StyledCheckItemLabel>
     </>
   );

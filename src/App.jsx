@@ -1,12 +1,14 @@
 import React from "react";
-import PageWrapper from "./components/layout/pageWrapper/PageWrapper.jsx";
+import Root from "./routes/Root";
 import { GlobalStyle } from "./styles.js";
+import ScrollToUp from "./components/ui/ScrollToUp";
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <PageWrapper />
+      <ScrollToUp />
+      <Root />
     </>
   );
 }

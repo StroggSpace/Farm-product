@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const StyledGoodsItem = styled.div`
-  width: 727px;
   height: 248px;
+  width: 866px;
 
   display: grid;
   grid-template-columns: 248px 1fr;

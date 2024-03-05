@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Check from "../../../assets/Check.svg?react";
 
 export const StyledCheckItemLabel = styled.label`
   position: relative;
@@ -18,14 +19,18 @@ export const StyledCheckItemLabel = styled.label`
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
     background-color: ${({ checked, theme }) =>
       checked ? theme.colors.orange : theme.colors.lightGray};
-    background-image: url(${({ checked }) =>
-      checked ? "src/assets/check.svg" : ""});
-    background-repeat: no-repeat;
-    background-position: center;
     transition: 0.2s ease-in-out;
   }
 `;
 
 export const StyledCheckItemInput = styled.input`
   display: none;
+`;
+
+export const StyledCheck = styled(Check)`
+  display: ${({ checked }) => (checked ? "block" : "none")};
+  position: absolute;
+  top: 5px;
+  right: 4px;
+  z-index: 1;
 `;
