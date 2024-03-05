@@ -13,7 +13,7 @@ export default function Root() {
     <>
       <Header />
       <StyledPageWrapper>
-        {pathname === `${appRoute.MAIN}` && <MainPage />}
+        {pathname === `${import.meta.env.BASE_URL}` && <MainPage />}
         <Outlet />
       </StyledPageWrapper>
       <Footer />

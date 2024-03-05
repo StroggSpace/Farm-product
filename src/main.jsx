@@ -10,12 +10,12 @@ import { appRoute } from "./routes/appRoute";
 
 const router = createBrowserRouter([
   {
-    path: `${appRoute.MAIN}`,
+    path: import.meta.env.BASE_URL,
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: `${appRoute.CATALOG}`,
+        path: `/catalog`,
         element: <CatalogPage />,
       },
     ],
