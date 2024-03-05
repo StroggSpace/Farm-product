@@ -6,7 +6,6 @@ import { ThemeProvider } from "styled-components";
 import { defaultTheme } from "./theme/default";
 import CatalogPage from "./components/pages/catalogPage/CatalogPage";
 import ErrorPage from "./components/pages/errorPage/ErrorPage";
-import { appRoute } from "./routes/appRoute";
 
 const router = createBrowserRouter([
   {
