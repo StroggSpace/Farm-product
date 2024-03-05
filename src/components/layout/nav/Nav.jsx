@@ -10,7 +10,7 @@ export default function Nav() {
   return (
     <>
       {(pathname === "/catalog" && (
-        <StyledRoutLink to="/">
+        <StyledRoutLink to={import.meta.env.BASE_URL}>
           <Button
             style={{
               backgroundColor: "#fff",
@@ -23,7 +23,7 @@ export default function Nav() {
           </Button>
         </StyledRoutLink>
       )) || (
-        <StyledRoutLink to={appRoute.CATALOG}>
+        <StyledRoutLink to="/catalog">
           <Button>Каталог</Button>
         </StyledRoutLink>
       )}

@@ -26,7 +26,7 @@ export default function ComparisonList() {
             ))}
         </StyledList>
 
-        <StyledRoutLink to={appRoute.CATALOG}>
+        <StyledRoutLink to={`/catalog`}>
           <Button>Купить</Button>
         </StyledRoutLink>
       </StyledSection>
